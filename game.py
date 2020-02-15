@@ -107,6 +107,8 @@ def collides(blocks, original, top, left, main_block):
 def main():
     """ Main Menu """
     pygame.init()
+    pygame.display.set_caption('Unblock')
+    pygame.display.set_icon(LOGO)
     done = False
     size = [SCREEN_WIDTH, SCREEN_HEIGHT]
     screen = pygame.display.set_mode(size)
@@ -177,6 +179,8 @@ def main():
 def game(current_level=None):
     """ Main Program """
     pygame.init()
+    pygame.display.set_caption('Unblock')
+    pygame.display.set_icon(LOGO)
     pygame.font.init()
 
     done = False
