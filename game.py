@@ -7,7 +7,6 @@ SCREEN_HEIGHT = 600
 LENGTH = 80
 TOP_LEFT = (160, 60)
 BOTTOM_RIGHT = (640, 540)
-TOTAL_LEVELS = 3
 BACKGROUND, BACKGROUND_2 = pygame.image.load("assets/bg.png"), pygame.image.load("assets/bg2.png")
 LOGO = pygame.image.load("assets/logo.png")
 GREEN_TICK = pygame.image.load("assets/greentick.png")
@@ -16,6 +15,7 @@ BUTTONS = [pygame.image.load("assets/button%d.png" % k) for k in range(1, 8)]
 BLOCKS = [pygame.image.load("assets/block%d.png" % k) for k in range(1, 8)]
 MAIN_BLOCK = pygame.image.load("assets/main.png")
 LEVEL_DATA = json.load(open("levels.json", "r"))
+TOTAL_LEVELS = len(LEVEL_DATA)
 
 
 def get_blocks(level):
